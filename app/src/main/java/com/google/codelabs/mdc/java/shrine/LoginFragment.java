@@ -2,6 +2,7 @@ package com.google.codelabs.mdc.java.shrine;
 
 import android.os.Bundle;
 import android.text.Editable;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,6 +35,18 @@ public class LoginFragment extends Fragment {
                 }else {
                     passwordTextInput.setError(null);
                 }
+            }
+        });
+
+        // clear the error once more than 8 char are typed
+
+        passwordEditText.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View view, int i, KeyEvent keyEvent) {
+                if(isPasswordValid(passwordEditText.getText())){
+                    passwordTextInput.setError(null);
+                }
+                return false;
             }
         });
 
