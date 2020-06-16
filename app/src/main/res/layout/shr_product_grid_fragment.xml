@@ -15,6 +15,7 @@
             android:layout_height="?attr/actionBarSize"
             app:title="@string/shr_app_name"
             style="@style/Widget.Shrine.Toolbar"
+            app:navigationIcon="@drawable/shr_menu"
             android:id="@+id/app_bar" />
 
     </com.google.android.material.appbar.AppBarLayout>
