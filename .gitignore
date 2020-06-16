@@ -38,3 +38,12 @@ local.properties
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Android studio files
+build.gradle
+gradle.properties
+gradle/
+gradlew
+gradlew.bat
+settings.gradle
+
