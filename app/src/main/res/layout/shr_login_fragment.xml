@@ -71,6 +71,7 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/next_Button"
+                style="@style/Widget.Shrine.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
@@ -78,9 +79,9 @@
                 android:text="@string/shr_button_next" />
 
             <com.google.android.material.button.MaterialButton
-
-                android:layout_width="wrap_content"
+                android:id="@+id/cancel_button"
                 style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="12dp"
                 android:layout_marginRight="12dp"
