@@ -35,7 +35,7 @@ public class ProductGridFragment extends Fragment {
 
         setUpToolbar(view);
 
-        //set up the recycler view
+        // Set up the RecyclerView
         RecyclerView recyclerView = view.findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2, GridLayoutManager.VERTICAL, false));
