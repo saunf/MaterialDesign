@@ -87,7 +87,8 @@
                 android:layout_marginRight="12dp"
                 android:layout_toStartOf="@+id/next_Button"
                 android:layout_toLeftOf="@+id/next_Button"
-                android:text="@string/shr_button_cancel" />
+                android:text="@string/shr_button_cancel"
+                android:textColor="@color/textColorPrimary"/>
          </RelativeLayout>
     </LinearLayout>
 </ScrollView>
