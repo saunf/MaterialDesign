@@ -40,7 +40,7 @@
         android:background="@color/productGridBackgroundColor"
         android:elevation="6dp"
         android:visibility="gone"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" tools:targetApi="lollipop">
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view"
