@@ -31,7 +31,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/shr_product_title"
                 android:textAlignment="center"
-                android:textAppearance="?attr/textAppearanceHeadline2" />
+                android:textAppearance="?attr/textAppearanceSubtitle2" />
 
             <TextView
                 android:id="@+id/product_price"
