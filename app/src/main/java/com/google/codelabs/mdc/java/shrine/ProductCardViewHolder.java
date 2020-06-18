@@ -15,7 +15,6 @@ public class ProductCardViewHolder extends RecyclerView.ViewHolder {
     public TextView productTitle;
     public TextView productPrice;
 
-
     public ProductCardViewHolder(@NonNull View itemView) {
         super(itemView);
         //TODO: Find and store views from itemView

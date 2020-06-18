@@ -52,14 +52,11 @@ public class LoginFragment extends Fragment {
             }
         });
 
-
-        // Snippet from "Navigate to the next Fragment" section goes here.
-
         return view;
     }
 
     // "isPasswordValid" from "Navigate to the next Fragment" section method goes here
-    private boolean isPasswordValid(Editable text){
+    private boolean isPasswordValid(Editable text) {
         return text != null && text.length() >=8;
     }
 }
