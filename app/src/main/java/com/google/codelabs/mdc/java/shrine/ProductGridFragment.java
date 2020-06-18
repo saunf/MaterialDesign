@@ -26,7 +26,6 @@ public class ProductGridFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
-
     }
 
     @Override
@@ -65,7 +64,8 @@ public class ProductGridFragment extends Fragment {
 
         // Set cut corner background for API 23+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            view.findViewById(R.id.product_grid).setBackgroundResource(R.drawable.shr_product_grid_background_shape);
+            view.findViewById(R.id.product_grid)
+                    .setBackgroundResource(R.drawable.shr_product_grid_background_shape);
         }
 
         return view;
@@ -77,6 +77,8 @@ public class ProductGridFragment extends Fragment {
         if(activity != null){
             activity.setSupportActionBar(toolbar);
         }
+        toolbar.setNavigationOnClickListener(new NavigationIconClickListener(getContext(), view.findViewById(R.id.product_grid)));
+
     }
 
     @Override
@@ -84,4 +86,5 @@ public class ProductGridFragment extends Fragment {
         menuInflater.inflate(R.menu.shr_toolbar_menu, menu);
         super.onCreateOptionsMenu(menu, menuInflater);
     }
+
 }
