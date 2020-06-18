@@ -56,13 +56,6 @@ public class ProductGridFragment extends Fragment {
         int smallPadding = getResources().getDimensionPixelSize(R.dimen.shr_staggered_product_grid_spacing_small);
         recyclerView.addItemDecoration(new ProductGridItemDecoration(largePadding, smallPadding));
 
-//        recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2, GridLayoutManager.VERTICAL, false));
-//        ProductCardRecyclerViewAdapter adapter = new ProductCardRecyclerViewAdapter(
-//                ProductEntry.initProductEntryList(getResources()));
-//        recyclerView.setAdapter(adapter);
-//        int largePadding = getResources().getDimensionPixelSize(R.dimen.shr_product_grid_spacing);
-//        int smallPadding = getResources().getDimensionPixelSize(R.dimen.shr_product_grid_spacing_small);
-//        recyclerView.addItemDecoration(new ProductGridItemDecoration(largePadding, smallPadding));
 
         // Set cut corner background for API 23+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
