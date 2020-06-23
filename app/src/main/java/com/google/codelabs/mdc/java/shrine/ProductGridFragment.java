@@ -70,6 +70,8 @@ public class ProductGridFragment extends Fragment {
             activity.setSupportActionBar(toolbar);
         }
 
+
+
         toolbar.setNavigationOnClickListener(new NavigationIconClickListener(
                 getContext(),
                 view.findViewById(R.id.product_grid),
@@ -82,6 +84,9 @@ public class ProductGridFragment extends Fragment {
     public void onCreateOptionsMenu(Menu menu, MenuInflater menuInflater) {
         menuInflater.inflate(R.menu.shr_toolbar_menu, menu);
         super.onCreateOptionsMenu(menu, menuInflater);
+
     }
+
+
 
 }
