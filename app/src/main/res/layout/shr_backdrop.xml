@@ -5,13 +5,13 @@
         style="@style/Widget.Shrine.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/shr_featured_label" />
+        android:text="@string/shr_account_label" />
 
     <com.google.android.material.button.MaterialButton
         style="@style/Widget.Shrine.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/shr_apartment_label" />
+        android:text="@string/shr_myorder_label" />
 
     <com.google.android.material.button.MaterialButton
         style="@style/Widget.Shrine.Button.TextButton"
@@ -53,6 +53,8 @@
         style="@style/Widget.Shrine.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/shr_account_label" />
+        android:text="@string/shr_logout_label" />
+
+
 
 </merge>
