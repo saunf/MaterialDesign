@@ -9,7 +9,6 @@
 
     <LinearLayout
         style="@style/Widget.Shrine.Backdrop"
-        android:id="@+id/layoutBackdrop"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center_horizontal"
@@ -17,7 +16,9 @@
         android:paddingTop="88dp">
 <!--        android:paddingBottom="100dp"-->
 <!--        xmlns:android="http://schemas.android.com/apk/res/android">-->
-        <include layout="@layout/shr_backdrop" />
+        <include
+            android:id="@+id/backdrop2"
+            layout="@layout/shr_backdrop" />
 
     </LinearLayout>
 
