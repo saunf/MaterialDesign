@@ -2,26 +2,28 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollViewId"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?android:windowBackground"
     tools:context=".MyProfileFragment">
 
     <LinearLayout
+        android:id="@+id/my_profile"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="24dp"
-        android:paddingTop="16dp"
-        android:id="@+id/my_profile">
+        android:paddingTop="16dp">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_gravity="center"
             app:cardBackgroundColor="#FFCF44"
             app:cardCornerRadius="4dp"
-            app:cardElevation="4dp"
-            android:id="@+id/card_view">
+            app:cardElevation="4dp">
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -31,84 +33,39 @@
                     android:id="@+id/imgProfilePic"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:scaleType="fitXY"
                     android:layout_gravity="center"
-                    android:src="@drawable/avatar">
-                </ImageView>
+                    android:scaleType="fitXY"
+                    android:src="@drawable/avatar"></ImageView>
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/editPic"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="top|center_horizontal"
-                    android:layout_marginLeft="40dp"
                     android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
                     app:elevation="4dp"
-                    app:srcCompat="@drawable/ic_edit_white_24dp"
-                    app:pressedTranslationZ="4dp">
-                </com.google.android.material.floatingactionbutton.FloatingActionButton>
+                    app:pressedTranslationZ="4dp"
+                    app:srcCompat="@drawable/ic_edit_white_24dp"></com.google.android.material.floatingactionbutton.FloatingActionButton>
             </FrameLayout>
         </androidx.cardview.widget.CardView>
 
-       <com.google.android.material.textfield.TextInputLayout
-           style="@style/Widget.Shrine.TextInputLayout"
-           android:id="@+id/textInputusername"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:layout_marginTop="15dp">
-
-           <com.google.android.material.textfield.TextInputEditText
-               android:id="@+id/editTextUsername"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:inputType="textPersonName"
-               android:drawableLeft="@drawable/ic_person_green_24dp"
-               android:drawablePadding="10dp"
-               android:paddingLeft="10dp"
-               android:paddingStart="10dp"
-               android:hint="User Name"
-               android:maxLines="1">
-
-           </com.google.android.material.textfield.TextInputEditText>
-
-       </com.google.android.material.textfield.TextInputLayout>
-
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputusername"
             style="@style/Widget.Shrine.TextInputLayout"
-            android:id="@+id/textInputLayoutEmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Email" >
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editTextEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_email_green_24dp"
-            android:drawablePadding="10dp"
-            android:inputType="textEmailAddress"
-            android:paddingLeft="10dp"
-            android:paddingStart="10dp"
-            >
-
-        </com.google.android.material.textfield.TextInputEditText>
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.Shrine.TextInputLayout"
-            android:id="@+id/textInputLayoutPhone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Phone Number" >
+            android:layout_marginTop="15dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/editTextPhone"
+                android:id="@+id/editTextUsername"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/ic_phone_green_24dp"
-                android:inputType="phone"
+                android:drawableLeft="@drawable/ic_person_green_24dp"
                 android:drawablePadding="10dp"
+                android:hint="User Name"
+                android:inputType="textPersonName"
+                android:maxLines="1"
                 android:paddingStart="10dp"
                 android:paddingLeft="10dp">
 
@@ -117,11 +74,53 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutEmail"
             style="@style/Widget.Shrine.TextInputLayout"
-            android:id="@+id/textInputLayoutAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Address" >
+            android:hint="Email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_email_green_24dp"
+                android:drawablePadding="10dp"
+                android:inputType="textEmailAddress"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutPhone"
+            style="@style/Widget.Shrine.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_phone_green_24dp"
+                android:drawablePadding="10dp"
+                android:inputType="phone"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutAddress"
+            style="@style/Widget.Shrine.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/editTextAddress"
@@ -129,8 +128,8 @@
                 android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/ic_address_green_24dp"
                 android:drawablePadding="10dp"
-                android:paddingLeft="10dp"
-                android:paddingStart="10dp">
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp">
 
             </com.google.android.material.textfield.TextInputEditText>
 
@@ -147,9 +146,6 @@
 
 
     </LinearLayout>
-
-
-
 
 
 </ScrollView>
