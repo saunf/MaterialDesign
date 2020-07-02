@@ -12,6 +12,10 @@ public class MainActivity extends AppCompatActivity implements NavigationHost {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.shr_main_activity);
 
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.add(R.id.container, new ProductGridFragment());
+        fragmentTransaction.commit();
+
         if (savedInstanceState == null) {
             getSupportFragmentManager()
                     .beginTransaction()
